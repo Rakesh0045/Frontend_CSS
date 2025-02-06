@@ -1,0 +1,96 @@
+
+li {
+    font-weight: 700;
+}
+
+
+/* class selector */
+
+.html{
+    color: #E85B2C;
+}
+
+.css{
+    color: #2D53E7;
+}
+
+.js{
+    color: #F0BF2A;
+}
+
+.react{
+    color: #66DBFB;
+}
+
+.tailwind{
+    color: rgb(0, 141, 180)
+} 
+
+/* id selector */
+
+#html{
+    font-size: 28px;
+}
+
+#css{
+    font-size: 28px;
+}
+
+#js{
+    font-size: 28px;
+}
+
+#react{
+    font-size: 28px;
+}
+
+#tailwind{
+    font-size: 28px;
+}
+
+/* Attribute selector */
+
+[class]{
+    background-color: cyan;
+}
+
+[rakesh]{
+    background-color: lawngreen;
+}
+
+[rakesh="123"]{
+    font-style: bold;
+}
+
+[rakesh="456"]{
+    font-style: italic;
+}
+
+/* Combination Selector */
+
+p{
+    background-color: #F0BF2A;
+    font-style: bold;
+}
+
+ul p{
+    background-color: greenyellow;
+}
+
+.web p{
+    font-style: italic;
+}
+
+/* Pseudo Selectors */
+
+h1:hover{
+    color: #E85B2C;
+}
+
+h2:hover{
+    color: orange;
+}
+
+[rakesh]:hover{
+    font-weight: 500;
+}
