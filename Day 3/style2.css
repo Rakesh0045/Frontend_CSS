@@ -1,0 +1,36 @@
+#html{
+    background-color: yellowgreen;
+}
+
+/*
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+
+    style2.css is loaded by browser after loading style.css
+
+    So if specificity is same for certain selectors, then the propeties in style2.css overrides previous ones because of CASCADE RULE
+
+*/
+
+#inherit{
+    color: yellowgreen;
+    font-size: 32px;
+    font-weight: 500;
+    font-family: cursive;
+}
+
+/*
+
+The child elements of a parent element inherit the properties of Parent element
+
+But for some elements like button the inheritance properties like font style does not work
+
+*/
+
+button{
+    font-family: inherit;
+    
+    /* we can inherit parent's properties like this if it does not inherit by default */
+}
+
