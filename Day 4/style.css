@@ -1,0 +1,128 @@
+li.html {
+    background-color: olive !important;
+    font-weight: 700;
+
+    /*
+
+    we can combine two selectors and then use !important
+
+    */
+}
+
+li {
+    background-color: brown !important;
+    font-weight: 700;
+
+    /*
+
+    !important has the HIGHEST Specificity. It can not be overridden by any other selector
+
+    But we can use another !important 
+
+    */
+}
+
+element.style{
+    background-color: violet;
+}
+
+
+/*
+<li class="html" id="html" style="background-color: green;">HTML</li>
+
+Inline elements specifity >> id, tag, class
+*/
+
+#html#html#html#html#html#html#html#html#html{
+    background-color: darkblue;
+
+    /*
+
+    <element id="html html html html html html html html html">
+    Selector Specificity: (9, 0, 0) = 9*specifity of id selector
+
+    */
+}
+
+.html.html.html.html.html.html.html.html{
+    background-color: gray;
+    
+    /*
+        <element class="html html html html html html html html">
+        Selector Specificity: (0, 8, 0) = 9*specificity of class selector
+    */
+
+}
+
+#html.html{
+    /*
+
+    This selector selects the elements which have id #html and class html.
+
+    <element id="html" class="html">
+    Selector Specificity: (1, 1, 0) = specifity of id + class
+
+    Specificity Order: id+class selector > id selector > class selector > tag selector
+
+    */
+    background-color: cyan;
+
+}
+
+#html{
+    background-color: deeppink;
+
+    /*
+
+    Specificty #html(1,0,0) > .html(0,1,0) > li(0,0,1)
+
+    Specificity Order: id selector > class selector > tag selector
+
+    */
+}
+
+.html{
+    background-color: cadetblue;
+
+    /*
+       
+    Even if the background color and font-weight properties are changed by li again, still this background-color: cadetblue; remains.
+
+    Because Specificity property overrules Cascade rule
+    Specificity of li(0,0,1) < .html(0,1,0)
+
+    More the specificity of selector, more dominant it is
+
+    If Specifity of selectors are same, then cascade rule is followed
+
+    */
+}
+
+li {
+    background-color: brown !important;
+    font-weight: 700;
+
+    /*
+
+    !important has the HIGHEST Specificity. It can not be overridden
+
+    */
+}
+
+li {
+    background-color: orange;
+    font-weight: 800;
+
+    /* 
+    
+    Overrides the previous property with font weight 700 to 800 and bg color green to orange 
+
+    This is cascade rule. If we have changed a particular property of an element twice, then the latest changes at bottom are applied 
+
+    */
+}
+
+
+
+
+
