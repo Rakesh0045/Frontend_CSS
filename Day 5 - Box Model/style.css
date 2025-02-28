@@ -1,0 +1,75 @@
+.one{
+    background-color: aquamarine;
+
+    width: 300px;
+    /* width: 500px; 
+        
+    * width property if applied, the content width will remain fixed and not change even if device width is changed
+
+    * If width property is not applied then content's height width changes dynamically with the device's aspect
+    
+    */
+
+    /* max-width: 500; 
+    
+    * If max-width is applied then the content does not crosses max-width value even if more width is available. Howwever content width can be reduced if less width is available
+    
+    */
+
+    /* height: 300px; 
+    
+    * height property makes the content height fixed and if width is reduced then the contents may overflow outside of height value
+    
+    */
+
+    /* overflow: hidden;
+
+    overflow: visible; */
+
+    /*
+
+    * overflow attribute is used to handle content overflow, in case it goes outside of specified height or width
+
+    */
+
+/* 
+    min-height: 100px;
+
+    min-width: 100px; */
+
+    /*
+
+    * min-height and min-width specify that content's height & width can never be less than the specified value, but it may increase to accomodate overflow
+
+    */
+
+    width: 50%;
+
+    /*
+
+    * width property is wrt its parent not the viewport or device width. Here parent of div one is body
+
+    *width property in % adjusts according to parent's width
+
+    *Even if parent doesnt have a specified width then it takes the viewport width by default and width property 50% adjusts according to it
+
+    */
+
+    height: 50%;
+
+    /*
+
+    * height property in % only works if the parent has a specified height value in pixels(absolute value) or else it doesnt works and stays same as parent
+
+    */
+
+    height: 200px;
+    padding: 10px;
+    /* padding is the space that we leave from each side from content area to make the content spaceous */
+}
+
+.two{
+    background-color: blue;
+    height: 50%;
+    width: 50%;
+}
