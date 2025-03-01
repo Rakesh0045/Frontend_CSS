@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    /* by default body margin is 8 px i.e content maintain margin space of 8 px from body on all sides
+    */
+}
+
+
+.one {
+    background-color: aquamarine;
+    width: 300px;
+
+    padding: 25px;
+    /* padding is the space around our content */
+
+    color: darkblue;
+    border: 8px solid teal; 
+    /* By default color of border is same as text color */
+
+    /* The size (width & height) of our box increases with the padding and borders which is a PROBLEM */
+
+    /* box-sizing: content-box; */
+
+    /*
+    This property of box-sizing is applied by default. In this, whenever we add padding borders to the box, its dimensions increase. Here the content's dimension is not decreased to accomodate the border and padding increase
+    */
+
+    box-sizing: border-box;
+
+    /*
+
+    If we apply border-box property then the padding and border is fitted inside the specified dimension of the box. Content width & height is reduced to adjust border and padding
+
+    */
+
+    margin: 40px;
+
+    /* margin is the space maintained from previous or adjacent  box/content 
+    
+    margin doesn't affect height width of content or box
+
+    */
+
+    border-radius: 10px;
+
+    /*
+    border-radius is used to make the corners or border rounded
+    */
+    outline: 5px solid gold;
+
+    /* outline property dont follow margin, if the value is high then it overrides on other element */
+
+}
+
+.two{
+    background-color: burlywood;
+    width: 300px;
+    padding: 25px;
+    border: 8px solid hotpink;
+    margin: 40px;
+    outline: 5px solid gold;
+}
+
+.three{
+    background-color: burlywood;
+    
+    /* To make a circle we have to keep height and width equal and border-radius should be > 50% */
+
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: black;
+
+    padding: 25px;
+    border: 8px solid yellow;
+    margin: 40px;
+    overflow: hidden;
+    outline: 5px solid gold;
+}
+
+img{
+    width: 100%;
+    /* image width become exactly same as parent width */
+}
