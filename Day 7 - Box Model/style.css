@@ -1,0 +1,144 @@
+body{
+    margin: 0;
+}
+
+p{
+    background-color: greenyellow;
+    width: 300px;
+    height: 100px;
+    padding: 25px;
+    box-sizing: border-box;
+    border: 10px solid green;
+    margin: 25px;
+}
+
+.html{
+
+    /*
+
+    NOTE: INLINE ELEMENTS FOLLOW BOX MODEL PROPERTIES ONLY FOR THE SAME LINE (LEFT AND RIGHT ELEMENTS). THEY DONT FOLLOW IT FOR TOP AND BOTTOM CONTENTS
+
+    */
+
+    background-color: coral;
+    width: 300px;
+
+    /* 
+    
+    Inline elements like span dont follow width height property of box model. They adjust dimensions acc to the content's dimension 
+    
+    Inline elements dont necessarily follow box model and dont maintain box block. But vary according to content
+
+    */
+
+    padding: 25px;
+
+    /* padding in Inline elements override the adjacent contents in top and bottom */
+
+    border: 10px solid pink;
+
+    /* border in Inline elements also override adjacent contents in top and bottom */
+
+    margin: 20px;
+
+    /* margin applied only in left and right */
+
+}
+
+.html1{
+    display: block;
+    /*
+
+    If we make display: block then inline elements acts as block level elements and follows all the properties of box model
+
+    */
+    background-color: cadetblue;
+    width: 300px;
+    height: 200px;
+    border: 10px solid pink;
+    margin: 20px;
+}
+
+.css1, .js1{
+    display: inline-block;    
+
+    /*
+
+    display property is used to make block level elements displayed as inline and inline elements displayed as block level.
+
+    display: none makes the content hidden
+
+    But as we know block level elements dont allow other elements in the same line after them. so to avoid this inline-block is used instead of display:block
+
+    If we make display: inline-block then inline elements acts as block level elements as well as allow other contents to fill the space next to them in same line
+
+    NOTE: 
+
+    TO DISPLAY CONTENT AS BOX IN DIFF LEVELS/LINES --> USE display:block;
+
+    TO DISPLAY CONTENT AS BOX IN SAME LEVELS/LINES --> USE display:inline-block;
+
+    inline-block property follows all the rules of box model and maintains the width, height, padding, margin, border in left,right,top,bottom etc.
+
+    */
+
+   
+
+    background-color: cadetblue;
+    width: 300px;
+    height: 200px;
+    border: 10px solid pink;
+    margin: 20px;
+}
+
+img{
+
+     /* 
+    
+    REPLACED AND NON-REPLACED INLINE ELEMENTS
+
+    * Non-Replaced inline-elements have content of their own, the content is usually text.
+
+    In non-replaced inline elements, height and width property of box model does not work 
+
+    Ex- <span>, <a>, <b> tags
+
+
+    * Replaced inline-elements dont have any content of their own, the content is replaced through some data from browser/user.
+
+    Ex- <img>, <iframe>, <video> tag where the content comes from external source or server
+
+    In replaced inline elements, height and width, padding property of box model does work 
+
+    NOTE: Never use both height and width for img as then the aspect ratio is not maintained
+
+    * img tag even if it is inline, it follows all property of box-model. Actually it acts as inline-block element instead of inline
+
+
+    */
+
+
+    width: 300px;
+    height: 300px;
+    background-color: gold;
+    padding: 50px;
+    border: 20px solid deeppink;
+    margin: 25px;
+
+    /* The border, margin, padding in case of img tag dont override the next contents like other inline elements 
+
+    It follows properties of box-model and acts as inline-block
+
+    */
+}
+
+iframe{
+    width: 480px;
+    height: 360px;
+    margin: 20px;
+}
+
+video{
+    width: 480px;
+}
+
