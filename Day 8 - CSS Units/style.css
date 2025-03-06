@@ -1,0 +1,50 @@
+body{
+    margin: 0;
+}
+.one{
+    width: 50%;
+    background-color: blueviolet;
+
+    height: 50%; /* does not work as none of its parent have any height value in pixels */
+
+    padding: 25px;
+
+    /* padding: 10%;
+    margin: 10%; */
+    
+    /*
+
+    If padding is in % then it is calculated wrt its parent and deviate from box model rules which is not recommended to use
+
+    */
+
+    border: 10% solid; /* % does not work for border */
+
+    box-sizing: border-box; /* padding border etc dont take extra space but takes from available width height */
+
+    font-size: 200%; /* calculated acc to parent's font size */
+}
+
+.box{
+    background-color: chartreuse;
+
+    width: 50%; /* Takes 50% of parent's width */
+
+}
+
+.two{
+    background-color: blueviolet;
+    width: 50vw; /* vw --> viewport(width of device) width 50vw = half of viewport width*/
+    height: 50vh; /* vh --> viewport(height of device) height 50vh = half of viewport height*/
+    padding: 10vw;
+    margin: 10vw;
+    border: 2vw solid gold
+}
+
+.box1{
+    background-color: chartreuse;
+    padding: 24px;
+    width: 50%;
+    box-sizing: border-box;
+}
+
