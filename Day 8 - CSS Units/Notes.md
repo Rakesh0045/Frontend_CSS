@@ -29,7 +29,7 @@ CSS UNITS
 
 i> Absolute units: px
 
-ii> Relative unit: 
+ii> Relative units: 
 
     --> % (Does not work for border)
 
