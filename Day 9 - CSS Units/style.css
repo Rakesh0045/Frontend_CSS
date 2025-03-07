@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+}
+
+.two{
+    background-color: blueviolet;
+    font-size: 32px;
+
+    width: 50vw;  
+    height: 50vh; 
+    padding: 10vw;
+    margin: 10vw;
+    border: 2vw solid gold
+}
+
+.box1{
+    background-color: chartreuse;
+
+    font-size: 2em;
+    /*
+
+    parent font-size: 32px is considered as 1 em
+    so 2em for child div = 64px
+
+    */
+
+    width: 10em;
+    /*
+
+    But for width property em works according to the own block/container/Element(in this case div)'s font-size
+
+    font-size of the block: 64px
+    so 1em width = 64px
+    10em = 640px
+
+    same applies for border margin padding
+
+    */
+    
+    padding: 1em;
+
+    /*
+
+    Advantage of padding in em: 
+    
+    If font-size increases padding also increases accordingly avoiding overflow
+
+    size of padding increases with size of content
+
+    */
+
+    /* box-sizing: border-box; */
+}
+
+html{
+    font: 10px;
+}
+
+.one{
+    background-color: blueviolet;
+    font-size: 5 rem;
+    
+    /*
+
+    rem works related to root/html's font size.
+
+    Here font-size: 10px in html so 5rem = 50px
+
+    */
+
+    width: 50vw;  
+    height: 50vh; 
+    padding: 10vw;
+    margin: 10vw;
+    border: 2vw solid gold
+}
+
+.box2{
+    background-color: chartreuse;
+    font-size: 2rem;
+
+    /*
+
+    rem works related to root/html's font size.
+
+    Here font-size: 10px in html so 2rem = 20px
+
+    */
+
+    width: 10em;
+    padding: 1em;
+
+}
+
+
