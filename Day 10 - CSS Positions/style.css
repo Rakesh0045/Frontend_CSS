@@ -1,0 +1,117 @@
+div{
+    background-color: chartreuse;
+    position: relative;
+    /* top: 50px;
+    bottom: 50px; 
+    
+    when we use top:50px in relative positioning our element maintains a margin of 50px from top
+
+    Same goes for bottom: 50px
+
+    top: -50px is same as bottom: 50px --> maintain a margin of 50px from bottom or move 50px closer to top
+
+
+
+    left: 50px;
+
+    element maintains margin of 50px from left and sometimes a scrollbar is added if the content goes beyond device width
+
+    left: -50px;
+
+    element moves 50px towards left, in this case no scrollbar is added even if content overflows
+    
+    */
+
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+
+    inset: 5px; 
+
+    /*
+
+    In case of conflicting positions like this, first one prevails
+
+    Here top and left position property overrules bottom and right
+
+    inset: 5px; does the same job in 1 line
+    
+    */
+
+}
+
+.css-element{
+    background-color: aqua;
+    position: absolute;
+    /*
+
+    inset: 5px;
+
+    Absolute positioning works wrt position of viewport as parent do not have any specified position property
+
+    Whole viewport is covered with the element with 5px gap from all sides  
+
+    */
+}
+
+.ul1{
+    position: relative;
+    /*
+
+    top: 15px
+
+    If parent is moved then child with position: absolute also moves along with it 
+
+    */
+}
+
+.css-element1{
+    background-color: deeppink;
+    position: absolute;
+    inset: 8px;
+    /*
+
+    As the parent of css-element1 i.e ul1 have specified position property so instead of viewport, the positioning is done wrt the parent ul1
+
+    */
+}
+
+.js{
+    position: fixed;
+    /*
+
+    position: fixed is always attatched to viewport irrespective of parent's positioning otherwise it is same as position: absolute
+
+    It gets overridden by or overrides other content sometimes
+
+    */
+    background-color: orange;
+}
+
+.ul2{
+    position: relative;
+    height: 300px;
+    overflow-y: scroll;
+    background-color: brown;
+    margin-top: 70px;
+}
+
+.css-element2{
+    background-color: olivedrab;
+    /* position: sticky; */
+    /*
+
+    If we use position: sticky then the content never goes outside the parent
+
+    It moves with the parent and remain inside it always even when we scroll when it is on edge
+
+    It attatches to the parent who have overflow: scroll property
+
+    It is used to make scrollable navbars
+
+    */
+    inset: 8px;
+    top: 10px;
+}
+
