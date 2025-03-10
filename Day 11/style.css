@@ -1,0 +1,15 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(36, 128, 0, 0.3);
+    opacity: 0.5;
+    transform: scale(5);
+    transform-origin: 0 0;
+    /*
+
+    If we mention 0 0 then it grows from top left corner and grows towards the right side
+
+    If we mention 100% 100% then it grows from bottom right corner to other sides (left side)
+
+    */
+}
