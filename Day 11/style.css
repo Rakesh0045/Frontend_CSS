@@ -1,10 +1,36 @@
+main{
+    height: 400px;
+    width: 600px;
+    /* background-color: chartreuse; */
+    position: relative;
+
+
+    /* CENTERING THE MAIN */
+
+    /* left: 50%;
+    top:50%; */
+    /* Element is moved 50% left and top from the element to which it is attatched */
+    /* bottom: 50%;
+    right: 50%;
+    transform: translate(-50%,-50%); */
+    /*
+
+    Now our div element is attatched to the main as we give a position property to main
+
+    */
+}
+
 .box{
-    width: 100px;
-    height: 100px;
-    background-color: rgba(36, 128, 0, 0.3);
-    opacity: 0.5;
-    transform: scale(5);
+    width: 300px;
+    height: 150px;
+    background-color: white;
+    color: white;
+    text-align: center;
+    /* opacity: 0.5; */
+    /* transform: scale(5); */
+    /* scale property also scales the texts inside the box */
     transform-origin: 0 0;
+
     /*
 
     If we mention 0 0 then it grows from top left corner and grows towards the right side
@@ -12,4 +38,63 @@
     If we mention 100% 100% then it grows from bottom right corner to other sides (left side)
 
     */
+
+    /* transform: rotate(-34deg); */
+
+    /* transform: translateY(100px); */
+    /* Element transforms from its position in x or y direction */
+
+    /* transform: translateY(100%); */
+    /* 
+    
+    Element transforms from its position 100% in y direction. That means element moves dist = its height
+    
+    Now element starts from the end of the original position. Ex-If original position y cordinate was 0 and element height was 100 then element moves 100px in y direction
+
+    */
+
+    /* transform: translateX(100%); */
+    /* 
+    
+    Element transforms from its position 100% in x direction. That means element moves dist = its width
+    
+    Element moves dist in x direction = Its width
+
+    */
+
+
+    /* CENTER A DIV */
+
+    position: absolute;
+    left: 50%;
+    top:50%;
+    /* Element is moved 50% left and top from the element to which it is attatched */
+    bottom: 50%;
+    right: 50%;
+    /* transform: translate(-50%,-50%); */
+
+    /* When we use transform translate -50% -50% then the element moves dist = half of its width in -ve x direction and dist = half of its height in -ve y direction */
+
+    /* box-shadow: 10px 10px 4px 10px rgba(0,0,0,0.4); */
+
+    /*  
+        10px 10px are the x and y direction value of the shadow
+        4 px is the blur radius
+        10px at last is the spread radius means shadow increases 10px in all direction
+        
+    */
+    background-image: url('https://images.unsplash.com/photo-1717330551200-83da9ed42835?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: contain;
+    background-repeat: cover;
+    background-position: -30px -15px;
+    border-radius: 12px ;
+    padding: 8px;
+    box-shadow: 0px 0px 16px 4px rgba(0,0,0,0.4);
+    text-shadow: 2px 2px 2px #ff1100;
+    transition: all 2000ms;
+}
+
+.box:hover{
+    transform: translate(-50%, -50%) rotate(45deg) scale(1.5);
+    box-shadow: 0px 0px 16px 4px rgba(0,0,0,0.8);
 }
