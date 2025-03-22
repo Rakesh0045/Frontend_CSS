@@ -1,0 +1,50 @@
+@font-face {
+    font-family: Outfit;
+    src: url(https://fonts.google.com/specimen/Outfit);
+  }
+
+body{
+    background-color: #d5e1ef;
+    min-height: 100vh;
+    font-family: cursive Outfit;
+    text-align: center;
+    font-weight: 400;
+
+}
+
+.card{
+    position: absolute; 
+    /* card gets attatched to viewport */
+    margin: auto;
+    /* margin left top bottom right distributed equally */
+    inset: 0;
+    /* left right top bottom : 0px it gets fixed to viewport */
+    height: 470px;
+    width: 100%;
+    max-width: 302px;
+    background-color: white;
+    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.1);
+    border-radius: 16px;
+    padding: 16px;
+    padding-bottom: 1rem;
+}
+
+img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+h3{
+    color: #252d47;   
+    font-weight: 400;
+    /* padding-left: 15px;
+    padding-right: 15px; */
+}
+
+p{
+    color:hsl(216, 15%, 48%);
+    padding-left: 25px;
+    padding-right:25px;
+    font-size: 15px;
+    font-weight: 700;
+}
