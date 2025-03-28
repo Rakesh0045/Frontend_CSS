@@ -8,7 +8,6 @@ body{
     padding: 4rem;
     color: white;
     background-image: url(background.png);
-    /* background-size: contain; */
     background-repeat: no-repeat;
     background-position-x: 100%;
     background-position-y: -160px;
