@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+.parent{
+    padding: 0px;
+    border: 4px solid indianred;
+    /* background-color: indianred; */
+    display: flex;
+}
+
+.parent span{
+    /* border: 4px solid cadetblue; */
+    background-color: cadetblue;
+    width: 200px;
+}
+
+.parent p{
+    /* border: 4px solid darkkhaki; */
+    background-color: darkkhaki;
+    width: 400px;
+    margin: 0;
+}
+
+.parent a {
+    /* border: 4px solid yellowgreen; */
+    background-color: yellowgreen;
+    width: 400px;
+}
