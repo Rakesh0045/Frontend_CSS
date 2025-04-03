@@ -1,38 +1,53 @@
-body {
+body{
     margin: 0;
-    font-family: cursive;
+    font-family: sans-serif;
 }
 
-.hashtag-header {
+.hashtag-header{
     background-color: #065FD4;
     padding: 4rem;
     color: white;
-    background-image: url(/images/background.png);
-    background-size: 260px;
+    background-image: url(background.png);
+    /* background-size: contain; */
+    background-repeat: no-repeat;
     background-position-x: 100%;
     background-position-y: -160px;
-    background-repeat: no-repeat;
+    background-size: 260px;
 }
 
-.hashtag-header h1 {
-    margin: 0;  
+.hashtag-header h1{
+    margin: 0;
     margin-bottom: 1rem;
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
-.hashtag-header span {
-    font-size: 2rem;
+.hashtag-header span{
+    font-size: 1.5rem;
+    margin-right: 5px;
 }
 
-
-.hashtag-header img {
-    width: 5rem;
-    height: 5rem;
+.hashtag-header img{
+    /* display: flex; */
+    width: 4rem;
+    height: 4rem;
     border: 5px solid white;
-    border-radius: 100%;
-    vertical-align: middle;
+    border-radius: 50%;
+    position: relative;
+    margin-left: -1rem; /* Overlap */
 }
 
-img + img {
-    margin-left: -1rem;
+.images-container img:not(:last-child) {
+    z-index: 1; /* Normal stacking for all except the first */
+}
+
+.images-container img:last-child {
+    z-index: 2; /* Ensure only the last image (which is actually the first due to row-reverse) stays on top */
+}
+
+.images-container{
+    display: inline-flex;
+    flex-direction: row-reverse;
+    justify-self: flex-end;
+    vertical-align: middle;
+    margin-left: 30px;
 }
