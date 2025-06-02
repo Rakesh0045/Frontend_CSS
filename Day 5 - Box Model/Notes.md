@@ -2,7 +2,7 @@ Summary:
 
 0. Height & width dependent on each other.
 
-1. To avoid overflow you should always set max-with not absolute width.
+1. To avoid overflow you should always set max-width not absolute width.
 
 2. To avoid overflow you should always set min-height not absolute height.
 
